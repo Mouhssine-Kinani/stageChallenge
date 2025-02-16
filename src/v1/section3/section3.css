@@ -1,0 +1,97 @@
+
+.s3-btn {
+  padding-inline: 2rem;
+  padding-block: 7px;
+  border: solid 2px #000;
+  background-color: transparent;
+  margin-inline: 30%;
+  transition: 400ms;
+}
+.s3-btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.s3-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Title in first column */
+#s3-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+/* Button in last column */
+.s3-btn {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    text-align: right;
+}
+
+/* Image container spans all 4 columns (desktop) */
+.img-container {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 10px;
+}
+
+/* Position the image wrapper as relative */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Overlay title */
+.image-title {
+    position: absolute;
+    bottom: 10px; /* Adjust distance from top */
+    left: 25%;
+    transform: translateX(-40%);
+    color: white;
+    /* font-size: 1.2rem;
+    font-weight: bold; */
+    /* background: rgba(0, 0, 0, 0.6); */
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    z-index: 2;
+}
+
+/* Images should take full width in their column */
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: Rounded corners */
+    display: block;
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 767px) {
+    .s3-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    #s3-title {
+        grid-column: 1 / 2;
+        text-align: start;
+    }
+
+    .s3-btn {
+        grid-row: 3;
+        grid-column: 1 / 2;
+        text-align: center;
+    }
+
+    .img-container {
+        grid-column: 1 / 2;
+        grid-template-columns: 1fr; /* Images stack vertically */
+    }
+}

@@ -1,0 +1,18 @@
+/* s3-button.css */
+.s3-btn {
+  padding-inline: 2rem;
+  padding-block: 7px;
+  border: solid 2px #000;
+  background-color: transparent;
+  margin-inline: 30%;
+  transition: 400ms;
+}
+.s3-btn:hover {
+  background-color: #000;
+  color: white;
+}
+.s3-btn {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  text-align: right;
+}

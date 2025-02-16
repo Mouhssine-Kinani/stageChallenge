@@ -6,14 +6,11 @@
 
 }
 .item1, .item2, .item3, .item4 {
-    /* border: solid 1px white; */
     padding: 1rem;
 }
 .item1{
     padding-left: 4rem;
 }
-
-
 .item2 ul{
     width: 100%;
     display: flex;

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./header.css";
-import logo from "../images/logo.svg";
-import closeIcon from "../images/icon-close.svg"; 
+import logo from "../../images/logo.svg";
+import closeIcon from "../../images/icon-close.svg";
+import hamberger from "../../images/icon-hamburger.svg";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ function Header() {
           onClick={toggleMenu}
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <img src={hamberger} alt="hamberger" />
         </button>
 
         {/* Desktop Navigation Items */}

@@ -1,0 +1,21 @@
+
+.s2-title-container{
+    text-align: center;
+    padding-inline: 4%;
+    padding-top: 10%;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+}
+
+.s2-content{
+    padding: 2%;
+    margin: 2%;
+}
+.s2-text{
+    padding-inline: 4%;
+    font-family: Alata;
+    color: rgb(153, 150, 150);
+}
+
+
+

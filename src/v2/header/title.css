@@ -1,0 +1,47 @@
+/* title */
+
+/* <div className="text-baner">
+<h1 className="header-title">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+</div> */
+.text-baner {
+  color: white;
+  border: solid 1px white;
+  margin-inline: 2rem; 
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
+  width: fit-content;
+  padding-inline-start: 17px;
+  padding-inline-end: 3rem;
+  margin-top:13% ;
+  margin-inline-start: 10.7%;
+  margin-inline-end: 37%;  
+}
+
+.header-title {
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  width: fit-content;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .text-baner{
+    margin-top: 25%;
+  }
+  .header-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-baner{
+    margin-top: 50%;
+  }
+  .header-title {
+    font-size: 1.2rem;
+  }
+}

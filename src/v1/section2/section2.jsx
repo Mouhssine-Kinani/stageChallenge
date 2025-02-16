@@ -1,5 +1,5 @@
 import './section2.css'
-import vrGuy from '../images/desktop/image-interactive.jpg'
+import vrGuy from '../../images/desktop/image-interactive.jpg'
 
 function Section2(){
     return(

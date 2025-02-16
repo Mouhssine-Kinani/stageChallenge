@@ -9,11 +9,9 @@
 .section2-text-container{
     text-align: center;
 }
-.vrGuyImg{
-    margin-left: 0;
-}
 
-@media (min-width : 576px) {
+
+@media (min-width : 767px) {
     .section2-content{
         position: absolute;
         width: 700px;
@@ -27,8 +25,30 @@
     }
     .section2-container{
         margin-top: 10rem;
+        /* height: 100vh; */
     }
     .vrGuyImg{
         margin-left: 15rem;
     }
 }
+@media (min-width : 996px) {
+    .section2-content{
+        position: absolute;
+        width: 700px;
+        height: 350px;
+        top: 64rem;
+        right: 1rem;
+        padding-top: 3rem;
+        padding-inline: 2rem;
+        /* border: solid 2px red; */
+        background-color: white;
+    }
+    .section2-container{
+        margin-top: 10rem;
+        /* height: 100vh; */
+    }
+    .vrGuyImg{
+        margin-left: 15rem;
+    }
+}
+
